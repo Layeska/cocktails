@@ -1,0 +1,42 @@
+<header>
+    <div class="icon">
+        <img src="https://cdn.icon-icons.com/icons2/1814/PNG/512/24cocktail_115460.png" alt="">
+        <h1>Cocktails</h1>
+    </div>
+
+    <div *ngIf="show === 1">
+        <nav>
+            <button mat-button [matMenuTriggerFor]="aboveMenu">Inicio</button>
+            <mat-menu #aboveMenu="matMenu" yPosition="above">
+                <button mat-menu-item>Fotos</button>
+                <button mat-menu-item>Ingredientes</button>
+            </mat-menu>
+
+            <button mat-button>FAQ</button>
+            <button mat-button>Acerca De</button>
+
+            <button mat-button>Contact</button>
+        </nav>
+    </div>
+
+    <div *ngIf="show === 0">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon>
+              <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+    </div>
+
+</header>
