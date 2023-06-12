@@ -1,0 +1,27 @@
+.item {
+  .example-card {
+    max-width: 400px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .example-header-image {
+    background-image: url('https://cdn.icon-icons.com/icons2/1814/PNG/512/24cocktail_115460.png');
+    background-size: cover;
+    border-radius: 50%;
+    border: 2.3px rgb(23, 16, 15) solid;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .category {
+    font-size: 0.6rem;
+  }
+
+  img {
+    cursor: pointer;
+  }
+}

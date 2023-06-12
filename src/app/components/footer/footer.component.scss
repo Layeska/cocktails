@@ -1,0 +1,130 @@
+footer {
+    background: rgb(12, 0, 21);
+    padding: 2rem 1rem 0 1rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+footer .footer div {
+    padding: 1rem 0rem;
+}
+
+footer h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+}
+
+footer div p, footer div ul li {
+    font-size: 0.9em;
+}
+
+footer div {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+footer .footer div:nth-child(3) ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer div:nth-child(3) ul li {
+    cursor: pointer;
+}
+
+footer .footer div:nth-child(3) ul li a {
+    color: rgb(255, 255, 255);
+}
+
+footer .footer div:nth-child(3) ul li a:hover {
+    color: rgb(164, 158, 179);
+}
+
+footer .credits {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+}
+
+footer .credits p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .credits a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(185, 118, 248);
+}
+
+@media screen and (width:320px) {
+    /** Footer **/
+    footer {
+        font-size: 0.68rem;
+    }
+}
+
+@media screen and (min-width: 435px) {
+    footer p, ul {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (min-width: 846px) {
+    /** Footer **/
+    footer {
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+
+    footer div p, footer div ul li {
+        font-size: 1rem;
+    }
+
+    footer .footer {
+        /*border: solid yellow 2px;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+        padding-top: 0rem;
+    }
+
+    footer .footer div:nth-child(1) {
+        width: 40%;
+    }
+
+    footer .footer div:nth-child(2) {
+        width: 40%;
+    }
+
+    footer .footer div:nth-child(3) {
+        width: 20%;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    footer .footer div:nth-child(2) p:nth-child(1) {
+        padding-bottom: 2rem;
+    }
+}
