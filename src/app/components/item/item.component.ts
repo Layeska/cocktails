@@ -18,12 +18,12 @@ export class ItemComponent {
   constructor(private router: Router) {}
 
   goToDrink() {
-    console.log(this.item)
+    console.log("ruta: ",this.item)
     this.router.navigate([`./cocktail/${this.item.idDrink}`])
   }
 
   ngOnInit(): void {
-    console.log('Ver: ', this.item)
+    //console.log('Ver: ', this.item)
   }
 
 
