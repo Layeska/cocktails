@@ -15,6 +15,7 @@ export class ListComponent {
   item: Cocktail[] = []
   itemValueFC = new FormControl('')
   evalue: number | undefined = 0
+  error: number = 0
 
   constructor(private itemService: ItemService) {}
 
@@ -29,6 +30,7 @@ export class ListComponent {
   searchByName(nameCoctail: string|null) {
     this.itemService.getbyName(nameCoctail).subscribe(res => {
       this.item = res
+      this.error = res === null ? 1 : 0
     })
   }
 }
