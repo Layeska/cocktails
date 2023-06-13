@@ -23,13 +23,11 @@ export class PopularComponent {
     this.searchById(178352)
     this.searchById(11872)
     this.searchById(14372)
-    //console.log("AUX: ", this.item)
   }
 
   searchById(id: number | string) {
     this.itemService.getById(id).subscribe(res => {
       this.drink1 = res.drinks
-     //console.log("drink1: ",this.drink1)
       this.item.push(this.drink1[0])
     })
   }
