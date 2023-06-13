@@ -4,6 +4,8 @@ header {
   justify-content: space-between;
   padding: 2rem;
 
+  
+
   .icon {
     display: flex;
     align-items: start;
@@ -29,6 +31,17 @@ header {
     button {
       font-size: 1.1em;
       font-weight: 600;
+
     }
   }
+}
+
+.about {
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  text-decoration: none !important;
+  color: black !important;
 }
