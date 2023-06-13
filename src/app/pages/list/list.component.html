@@ -2,10 +2,12 @@
     <div class="header">
         <input type="text" name="" id="" placeholder="Busqueda por nombre " [formControl]="itemValueFC"/>
     </div>
-    <div class="div">
+
+    <div class="div" *ngIf="evalue">
         <app-item *ngFor="let drink of item" [item]="drink"></app-item>
+        <div class="error">
+            <p  class="message">No se encontró bebida 😓</p>
+            <img src="../../../assets/notfound.png" alt="">
+        </div>
     </div>
-
 </div>
-
-
