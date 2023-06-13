@@ -13,6 +13,7 @@ import { ItemComponent } from './components/item/item.component';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
 import { PopularComponent } from './components/popular/popular.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { PopularComponent } from './components/popular/popular.component';
     ListComponent,
     FooterComponent,
     PopularComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
