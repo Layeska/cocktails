@@ -6,14 +6,12 @@
 
     <div *ngIf="show === 1">
         <nav>
-            <button mat-button [matMenuTriggerFor]="aboveMenu">Inicio</button>
-            <mat-menu #aboveMenu="matMenu" yPosition="above">
-                <button mat-menu-item>Fotos</button>
-                <button mat-menu-item>Ingredientes</button>
-            </mat-menu>
+            <button mat-button [routerLink]="['']" routerLinkActive="active">Inicio</button>
 
-            <button mat-button>FAQ</button>
-            <button mat-button>Acerca De</button>
+            <button mat-button [routerLink]="['/faq']" routerLinkActive="active">FAQ</button>
+            <button mat-button>
+              <a href="#about" class="about">Acerca De</a>
+            </button>
 
             <button mat-button>Contact</button>
         </nav>
@@ -24,19 +22,22 @@
             <mat-icon>more_vert</mat-icon>
           </button>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item>
-              <mat-icon>dialpad</mat-icon>
-              <span>Redial</span>
+            <button mat-menu-item [routerLink]="['']">
+              <mat-icon>home</mat-icon>
+              <span>Inicio</span>
             </button>
-            <button mat-menu-item disabled>
-              <mat-icon>voicemail</mat-icon>
-              <span>Check voice mail</span>
+            <button mat-menu-item [routerLink]="['/faq']">
+              <mat-icon>info</mat-icon>
+              <span>FAQ</span>
+            </button>
+            <button mat-menu-item [routerLink]="['#about']">
+              <mat-icon>rss_feed</mat-icon>
+              <a href="#about" class="about">Acerca De</a>
             </button>
             <button mat-menu-item>
-              <mat-icon>notifications_off</mat-icon>
-              <span>Disable alerts</span>
+              <mat-icon>mail</mat-icon>
+              <a href="mailto:lisa13suarez@gmail.com" class="link">Contact</a>
             </button>
           </mat-menu>
     </div>
-
 </header>

@@ -6,7 +6,7 @@
                 repudiandae animi cupiditate cumque vitae, facilis dolor laudantium, quo omnis quidem asperiores.
             </p>
         </div>
-        <div>
+        <div id="about">
             <h4> About Us</h4>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo placeat sed magnam a dolorum,</p>
             <p> ipsam pariatur doloribus accusamus quo omnis quidem asperiores</p>
@@ -15,13 +15,13 @@
             <h4> Quick Links </h4>
             <ul>
                 <li>
-                    <a href="./index.html"> Inicio </a>
+                    <button [routerLink]="['']"> Inicio </button>
                 </li>
                 <li>
-                    <a href="./pages/faq/faq.html"> FAQ </a>
+                    <button [routerLink]="['/faq']"> FAQ </button>
                 </li>
                 <li>
-                    <a href="./pages/solicitar/solicitar.html"> Acerca De </a>
+                    <a href="#about"> Acerca De </a>
                 </li>
                 <li>
                     <a href="mailto:lisseth06juarez@gmail.com"> Contact </a>
