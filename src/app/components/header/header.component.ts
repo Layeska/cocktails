@@ -17,8 +17,8 @@ export class HeaderComponent {
   show: number = 1
 
   ngOnInit(): void {
-    console.log('Viw: ', this.showViewPort())
-    console.log(window.screen.height,window.screen.width)
+    //console.log('Viw: ', this.showViewPort())
+    //console.log(window.screen.height,window.screen.width)
     this.show = this.showViewPort() ? 1 : 0
     console.log(this.show)
   }
