@@ -24,11 +24,20 @@ export class ItemService {
     return this.http.get<Cocktail[]>(this.API_URL, {params}).pipe(map((res:any) => res.drinks))
   }
 
+  //! Retorna un array
   getById(id: number | string) {
     const params: any = {
       i: id
     }
 
     return this.http.get<Cocktail[]>(this.API_URL_LookUp, {params}).pipe(map((res:any) => res))
+  }
+
+  //! Retorna un objeto
+  showDetails(id: number | string) {
+    const params: any = {
+      i: id
+    }
+    return this.http.get<Cocktail[]>(this.API_URL_LookUp, {params}).pipe(map((res:any) => res.drinks[0]))
   }
 }
