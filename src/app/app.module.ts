@@ -15,11 +15,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PopularComponent } from './components/popular/popular.component';
 import { FaqComponent } from './pages/faq/faq.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    DetailComponent,
     ListComponent,
     FooterComponent,
     PopularComponent,
@@ -32,7 +30,8 @@ import { FaqComponent } from './pages/faq/faq.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HeaderComponent,
-    ItemComponent
+    ItemComponent,
+    DetailComponent,
   ],
   providers: [provideAnimations()],
   bootstrap: [AppComponent]
