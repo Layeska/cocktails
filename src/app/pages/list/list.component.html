@@ -5,7 +5,7 @@
 
     <div class="div" *ngIf="evalue">
         <app-item *ngFor="let drink of item" [item]="drink"></app-item>
-        <div class="error">
+        <div class="error" *ngIf="error">
             <p  class="message">No se encontró bebida 😓</p>
             <img src="../../../assets/notfound.png" alt="">
         </div>
