@@ -3,6 +3,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { NgIf } from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [MatMenuModule, MatButtonModule, MatIconModule, NgIf]
+  imports: [MatMenuModule, MatButtonModule, MatIconModule, NgIf, RouterModule]
 })
 
 export class HeaderComponent {
