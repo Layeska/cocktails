@@ -1,6 +1,6 @@
 <article>
-    <h2>Bebidas Populares</h2>
-    <div>
-        <app-item *ngFor="let item of drink1"></app-item>
+    <h2 class="title">Bebidas Populares</h2>
+    <div class="container">
+        <app-item *ngFor="let drink of item" [item]="drink"></app-item>
     </div>
 </article>
