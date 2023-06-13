@@ -29,6 +29,6 @@ export class ItemService {
       i: id
     }
 
-    return this.http.get<Cocktail[]>(this.API_URL_LookUp, {params}).pipe(map((res:any) => res.drinks[0]))
+    return this.http.get<Cocktail[]>(this.API_URL_LookUp, {params}).pipe(map((res:any) => res))
   }
 }
