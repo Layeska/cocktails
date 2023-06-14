@@ -1,16 +1,23 @@
 <aside class="container">
     <h2>Detalles de la Bebida</h2>
-    <mat-card class="example-card"  *ngIf="card$ | async as card">
+    <mat-card class="example-card" *ngIf="card$ | async as card">
         <mat-card-header>
-        <mat-card-title-group>
-            <mat-card-title> {{card.strDrink}}</mat-card-title>
+          <mat-card-title-group>
+            <mat-card-title>{{card.strDrink}}</mat-card-title>
             <mat-card-subtitle>{{ card.strCategory}}</mat-card-subtitle>
-            <img mat-card-sm-image [src]="card.strDrinkThumb" >
-        </mat-card-title-group>
+            <img mat-card-md-image [src]="card.strDrinkThumb"  alt="Image of a Shiba Inu">
+          </mat-card-title-group>
         </mat-card-header>
-        <mat-card-content>
-            Instructions:
-        {{card.strInstructions}}
+        <mat-card-content class="content">
+            <p><b>Categoria: </b>{{ card.strCategory}}</p>
+            <p><b>Instrucciones: </b> {{card.strInstructions}}</p>
+            <p><b>Ingredientes: </b></p>
+            <ul>
+                <li>{{card.strIngredient1}} - {{card.strMeasure1}}</li>
+                <li>{{card.strIngredient2}} - {{card.strMeasure2}}</li>
+                <li>{{card.strIngredient3}} - {{card.strMeasure3}}</li>
+            </ul>
         </mat-card-content>
-    </mat-card>
+      </mat-card>
+    
 </aside>
