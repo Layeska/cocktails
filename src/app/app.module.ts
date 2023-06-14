@@ -21,7 +21,6 @@ import { FaqComponent } from './pages/faq/faq.component';
     ListComponent,
     FooterComponent,
     PopularComponent,
-    FaqComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +31,7 @@ import { FaqComponent } from './pages/faq/faq.component';
     HeaderComponent,
     ItemComponent,
     DetailComponent,
+    FaqComponent,
   ],
   providers: [provideAnimations()],
   bootstrap: [AppComponent]
