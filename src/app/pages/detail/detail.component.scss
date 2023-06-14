@@ -14,4 +14,16 @@
         width: 1100px;
         margin: auto;
     }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+    }
 }
